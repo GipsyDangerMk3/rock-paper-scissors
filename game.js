@@ -23,10 +23,10 @@ let computerScore = 0;
 
 //Plays the round and determines the winner
 function playRound () {
-    computerChoice = getComputerChoice();
-    console.log ( "The Computer has chosen " + computerChoice + "!");
     humanChoice = getHumanChoice();
     console.log ( "The Player has chosen " + humanChoice + "!");
+    computerChoice = getComputerChoice();
+    console.log ( "The Computer has chosen " + computerChoice + "!");
     if (humanChoice === computerChoice) {
         Tie = true;
         console.log("You tie! You've both have chosen "+humanChoice);
